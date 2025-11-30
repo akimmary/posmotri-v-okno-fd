@@ -58,7 +58,7 @@ ol {
   flex-direction: row;
   align-items: flex-end;
   gap: 29px;
-  padding: 133px 30px 130px;
+  padding: 145px 30px 130px;
 }
 
 .content__details {
@@ -66,6 +66,7 @@ ol {
   flex-direction: column;
   gap: 20px;
   width: 100%;
+  min-height: 534px;
   height: 100%;
 }
 
@@ -83,6 +84,7 @@ ol {
   width: 100%;
   max-width: 399px;
   max-height: 298px;
+  overflow-x: hidden;
   overflow-y: auto;
   gap: 28px;
   padding-bottom: 2px;
@@ -126,7 +128,7 @@ ol {
 }
 
 .title {
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 0.94;
@@ -179,7 +181,7 @@ ol {
 
 .content__video-card-title {
   overflow: hidden;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 30px;
   text-transform: uppercase;
@@ -195,7 +197,7 @@ ol {
   font-size: 18px;
   line-height: 16.2px;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 4;
 }
 
 .content__list-item {
@@ -238,8 +240,8 @@ ol {
 .search-form__textfield {
   min-width: 225px;
   border: none;
-  border-top: #fff solid 1px;
-  border-bottom: #fff solid 1px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
   padding-inline: 0;
   color: #fff;
   font-weight: 400;
@@ -248,7 +250,7 @@ ol {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', sans-serif;
 }
 
 .search-form__textfield::placeholder {
@@ -256,7 +258,7 @@ ol {
 }
 
 .search-form__label:has(:focus-visible) {
-  outline: #fff solid 1px;
+  outline: solid 1px currentColor;
   outline-offset: 1px;
 }
 
@@ -267,7 +269,7 @@ ol {
 .search-form__pseudo-checkbox {
   width: 19px;
   height: 19px;
-  border: #fff solid 1px;
+  border: solid 1px currentColor;
   padding: 1px;
 }
 
@@ -292,8 +294,8 @@ ol {
 }
 
 .button {
-  border: #fff solid 1px;
   color: #fff;
+  border: solid 1px currentColor;
   font-weight: 700;
   font-size: 18px;
   background-color: transparent;
@@ -303,14 +305,15 @@ ol {
 .search-form__submit-button {
   align-self: flex-end;
   width: 194px;
-  height: 34px;
+  min-height: 34px;
   font-stretch: semi-condensed;
 }
 
 .more-button {
-  width: 100%;
+  width: auto;
   min-height: 34px;
   font-stretch: semi-condensed;
+  margin: 0 2px;
 }
 
 .button:hover {
@@ -327,6 +330,6 @@ ol {
 }
 
 .button:focus-visible {
-  outline: #fff solid 1px;
+  outline: solid 1px currentColor;
   outline-offset: 1px;
 }
